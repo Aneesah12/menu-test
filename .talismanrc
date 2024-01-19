@@ -1,0 +1,9 @@
+fileignoreconfig:
+filename: pages/menu/menu-without-solid.tsx
+checksum: 7b9810c0d91618d2fdb1b2242a577bec1b7b1df68a3ba708925e71ea46e5b9bd
+filename: package-lock.json
+checksum: b81b3b8c55c898b5d2b7444166f8244a29b3385b77630e1fc37d0d4065593a19
+scopeconfig:
+- scope: node
+version: "1.0"
+threshold: medium
