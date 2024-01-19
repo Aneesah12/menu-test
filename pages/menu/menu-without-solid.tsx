@@ -3,6 +3,7 @@ import fetchCocktails from "../api/cocktail-api";
 
 export default function menuWithoutSolid  () {
     const [cocktails, setCocktails] = useState([]);
+    const [displayCocktails, setDisplayCocktails] = useState(false);
     const handleFetch = async () => {
         const fetchedCocktails = await fetchCocktails().then(r => r.drinks);
         setCocktails(fetchedCocktails);
@@ -12,10 +13,9 @@ export default function menuWithoutSolid  () {
         handleFetch().then(() => cocktails);
     }, []);
 
-    const [displayCocktails, setDisplayCocktails] = useState(false);
-
     return <>
 
+        <h3>Cocktails!</h3>
         <button onClick={() => setDisplayCocktails(!displayCocktails)}>Click me!</button>
         {displayCocktails &&
         <ul>
